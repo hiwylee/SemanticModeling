@@ -1,0 +1,262 @@
+{
+  "logicalTable" : {
+    "name" : "D4 Addresse",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Address1",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.ADDRESS1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Address2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.ADDRESS2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Postal Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.POSTAL_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "State Province",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.STATE_PROVINCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ctry Cd3 State Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.CTRY_CD3_STATE_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ctry Cd3 State Abbrv",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.CTRY_CD3_STATE_ABBRV" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ctry Cd3 State Name City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.CTRY_CD3_STATE_NAME_CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Longitude",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.LONGITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Latitude",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.LATITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Estab Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.ESTAB_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.REGION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Iso Country Code3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.ISO_COUNTRY_CODE3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Country Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.COUNTRY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "State Province Abbrv",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.STATE_PROVINCE_ABBRV" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Address Key",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.ADDRESS_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Area",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D4 Addresse",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D4 Addresse.AREA" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D4 Addresse",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MySampleSalesDatabase.BISAMPLE.D4 Addresse" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Sample Sales BM.D3 Customers",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ],
+    "primaryKey" : [ "Address Key" ]
+  }
+}

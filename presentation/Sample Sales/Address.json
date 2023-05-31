@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Address",
+    "presentationColumns" : [ {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Addresse.City"
+    }, {
+      "name" : "Country Name",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Addresse.Country Name"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Addresse.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Addresse.Longitude"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Addresse.Region"
+    }, {
+      "name" : "State Province",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Addresse.State Province"
+    } ]
+  }
+}
