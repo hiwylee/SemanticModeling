@@ -329,6 +329,9 @@
           "expressionTemplate" : "AGO(%1 ,%2 , 1)",
           "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Revenue", "logicalLevel:Sample Sales BM.D1 Time.Month" ]
         }
+      },
+      "aggregation" : {
+        "aggregateByLevels" : [ "logicalLevel:Sample Sales BM.D1 Time.Month" ]
       }
     }, {
       "name" : "Month Ago No Of Cust",
@@ -340,6 +343,37 @@
           "expressionTemplate" : "AGO(%1 , %2 , 1)",
           "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Distinct No Of Cust", "logicalLevel:Sample Sales BM.D1 Time.Month" ]
         }
+      },
+      "aggregation" : {
+        "aggregateByLevels" : [ "logicalLevel:Sample Sales BM.D1 Time.Month" ]
+      }
+    }, {
+      "name" : "Day Ago No Of Cust",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "AGO(%1 , %2 , 1)",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Distinct No Of Cust", "logicalLevel:Sample Sales BM.D1 Time.세부정보" ]
+        }
+      },
+      "aggregation" : {
+        "aggregateByLevels" : [ "logicalLevel:Sample Sales BM.D1 Time.세부정보" ]
+      }
+    }, {
+      "name" : "Day Ago Revenue",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "AGO(%1 , %2 , 1)",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Revenue", "logicalLevel:Sample Sales BM.D1 Time.세부정보" ]
+        }
+      },
+      "aggregation" : {
+        "aggregateByLevels" : [ "logicalLevel:Sample Sales BM.D1 Time.세부정보" ]
       }
     } ],
     "logicalTableSources" : [ {

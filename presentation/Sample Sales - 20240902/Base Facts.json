@@ -16,6 +16,12 @@
     }, {
       "name" : "Month Ago Revenue",
       "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Month Ago Revenue"
+    }, {
+      "name" : "Day Ago No Of Cust",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Day Ago No Of Cust"
+    }, {
+      "name" : "Day Ago Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Day Ago Revenue"
     } ]
   }
 }
