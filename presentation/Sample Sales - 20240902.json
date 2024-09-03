@@ -1,0 +1,18 @@
+{
+  "subjectArea" : {
+    "name" : "Sample Sales - 20240902",
+    "description" : "Sample Sales - 20240902",
+    "sourceBusinessModel" : "businessModel:Sample Sales BM",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Sample Sales - 20240902.Time"
+    }, {
+      "name" : "presentationTable:Sample Sales - 20240902.Products"
+    }, {
+      "name" : "presentationTable:Sample Sales - 20240902.Customers"
+    }, {
+      "name" : "presentationTable:Sample Sales - 20240902.Base Facts"
+    }, {
+      "name" : "presentationTable:Sample Sales - 20240902.Address"
+    } ]
+  }
+}

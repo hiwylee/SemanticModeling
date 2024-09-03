@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Base Facts",
+    "presentationColumns" : [ {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Revenue"
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Units"
+    }, {
+      "name" : "Distinct No Of Cust",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Distinct No Of Cust"
+    }, {
+      "name" : "Month Ago No Of Cust",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Month Ago No Of Cust"
+    }, {
+      "name" : "Month Ago Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Month Ago Revenue"
+    } ]
+  }
+}

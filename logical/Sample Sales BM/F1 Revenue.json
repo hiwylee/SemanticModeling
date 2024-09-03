@@ -17,8 +17,7 @@
         } ]
       },
       "aggregation" : {
-        "rule" : "COUNT",
-        "dataIsDense" : false
+        "rule" : "COUNT"
       }
     }, {
       "name" : "Discnt Value",
@@ -259,8 +258,7 @@
         } ]
       },
       "aggregation" : {
-        "rule" : "SUM",
-        "dataIsDense" : false
+        "rule" : "SUM"
       }
     }, {
       "name" : "Order Dtime1 Db Tz",
@@ -303,6 +301,45 @@
             "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.F1 Revenue.ORDER_DTIME2_CUSTOM_TZ" ]
           }
         } ]
+      }
+    }, {
+      "name" : "Distinct No Of Cust",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F1 Revenue",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.F1 Revenue.CUST_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT"
+      }
+    }, {
+      "name" : "Month Ago Revenue",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "AGO(%1 ,%2 , 1)",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Revenue", "logicalLevel:Sample Sales BM.D1 Time.Month" ]
+        }
+      }
+    }, {
+      "name" : "Month Ago No Of Cust",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "AGO(%1 , %2 , 1)",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Distinct No Of Cust", "logicalLevel:Sample Sales BM.D1 Time.Month" ]
+        }
       }
     } ],
     "logicalTableSources" : [ {

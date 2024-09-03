@@ -4,7 +4,7 @@
     "databaseType" : "ORACLE_ADW",
     "connectionPools" : [ {
       "name" : "New Connection Pool_1",
-      "connection" : "'system'.'BISAMPLE'",
+      "connection" : "'system'.'BISAMPE-JejuAir'",
       "remoteConnection" : false,
       "maxConnections" : 10,
       "requiresFullyQualifedTableNames" : true,
